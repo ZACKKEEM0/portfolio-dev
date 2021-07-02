@@ -1,0 +1,272 @@
+/* CREDIT KEEMO | Community */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: transparent;
+}
+
+/* BUTTON */
+.btn {
+    width: auto;
+    cursor: pointer;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    border: none;
+    background-color: #2ecc71;
+    margin: 2px;
+}
+
+.btn:hover {
+    background-color: #11bb58;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+    user-select: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+    overflow: hidden;
+}
+
+.container {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+.container-wrap {
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 50%, rgba(0,0,0,.60) 100%);
+}
+
+.tournament-main {
+    position: relative;
+    width: 500px;
+    height: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.tournament-left {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.tournament-center {
+    width: 20%;
+    height: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tournament-right {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+
+.tournament-bottom {
+    position: absolute;
+    width: 100%;
+    height: 46%;
+    bottom: 0;
+}
+
+.teamname {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.vs {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.score {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-top: -20px;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.team-img {
+    position: relative;
+    top: 25%;
+}
+
+.flag-main {
+    position: relative;
+    width: 65%;
+    height: 50px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+#flag-left {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    background: red;
+    padding: 2px;
+}
+
+.flag-center {
+    width: 25%;
+    height: 85%;
+    margin-top: 3px;
+    margin-bottom: 2px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background: grey;
+}
+
+#flag-right {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    background: grey;
+    padding: 2px;
+}
+
+.flag-score {
+    background: black;
+    width: 50px;
+    right: 0;
+}
+
+.flag-name {
+    color: white;
+    width: 60%;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.flag-score-A ,.flag-score-B {
+    position: relative;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 28px;
+    left: 35%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.flag-time {
+    position: relative;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 14px;
+    left: 25%;
+    margin-top: -1px;
+}
+
+.set-time {
+    position: relative;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 14px;
+    left: 25%;
+    margin-top: -12px;
+}
+
+/* CONTROL PANEL */
+
+#contropanel-main {
+    position: absolute;
+    border-radius: 5px;
+    background: #6c757d!important;
+    width: 450px;
+    height: auto;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.4);
+    margin: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.controlpanel-setting {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.setting-team {
+    width: 50%;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    margin: 5px;
+}
+
+.setting-game {
+    width: 100%;
+    color: white;
+    font-family: 'Sarabun', sans-serif;
+    margin: 5px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
